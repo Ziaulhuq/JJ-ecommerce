@@ -18,14 +18,14 @@ const Header = () => {
               className="flex"
             ></Image>
           </Link>
-          <span>JJ Handmade</span>
+          <span className="hidden md:block">JJ Handmade</span>
         </div>
         <div className="flex gap-4 items-center">
-          <div className="flex gap-2">
+          <div className="flex gap-1">
             <ShoppingCartIcon />
             <span>Cart</span>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-1">
             <UserIcon />
             <span>Admin</span>
           </div>
