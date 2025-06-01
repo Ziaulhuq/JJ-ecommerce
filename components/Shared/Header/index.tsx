@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { APP_NAME } from "@/lib/constants";
-import { ShoppingCartIcon, UserIcon } from "lucide-react";
+import { Roboto } from "next/font/google";
+import Navigation from "@/components/Shared/Header/navigation";
+
+const roboto = Roboto({
+  weight: "700",
+  subsets: ["latin"],
+});
 
 const Header = () => {
   return (
@@ -18,17 +24,14 @@ const Header = () => {
               className="flex"
             ></Image>
           </Link>
-          <span className="hidden md:block">JJ Handmade</span>
+          <Link href="/">
+            <span className={`hidden md:block ${roboto.className}`}>
+              JJ Handmade
+            </span>
+          </Link>
         </div>
-        <div className="flex gap-4 items-center">
-          <div className="flex gap-1">
-            <ShoppingCartIcon />
-            <span>Cart</span>
-          </div>
-          <div className="flex gap-1">
-            <UserIcon />
-            <span>Admin</span>
-          </div>
+        <div className="flex justify-center items-center">
+          <Navigation />
         </div>
       </div>
     </header>
