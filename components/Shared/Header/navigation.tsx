@@ -33,7 +33,7 @@ const Navigation = () => {
           <SheetTrigger className="align-middle">
             <EllipsisVertical className="cursor-pointer" />
           </SheetTrigger>
-          <SheetContent className="flex flex-col items-start w-xs p-4">
+          <SheetContent className="flex flex-col items-start w-xs md:w-sm p-4 borde-b">
             <SheetTitle>Menu</SheetTitle>
             <ModeToggle />
             <Button asChild variant="ghost">

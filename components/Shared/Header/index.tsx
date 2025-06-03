@@ -3,6 +3,7 @@ import Link from "next/link";
 import { APP_NAME } from "@/lib/constants";
 import { Roboto } from "next/font/google";
 import Navigation from "@/components/Shared/Header/navigation";
+import SearchMenu from "@/components/Shared/Header/searchMenu";
 
 const roboto = Roboto({
   weight: "700",
@@ -29,6 +30,9 @@ const Header = () => {
               JJ Handmade
             </span>
           </Link>
+        </div>
+        <div className="flex justify-center items-center">
+          <SearchMenu />
         </div>
         <div className="flex justify-center items-center">
           <Navigation />
