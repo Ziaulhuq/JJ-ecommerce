@@ -7,6 +7,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: url("/bg-image copy.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 30vh;
 }
 
 @theme inline {

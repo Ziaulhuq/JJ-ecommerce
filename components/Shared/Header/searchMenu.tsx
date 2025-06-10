@@ -6,8 +6,9 @@ const SearchMenu = () => {
           type="text"
           name="search"
           placeholder="Search products..."
-          className=" rounded-lg p-2 w-[250px] border-2 text-sm focus-visible:ring-0"
+          className=" rounded-md p-2 w-[350px]  border-2 bg-white border-gray-400 text-sm focus-visible:ring-0"
         />
+        <span>hi</span>
       </form>
     </div>
   );
